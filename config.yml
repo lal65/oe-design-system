@@ -1,4 +1,4 @@
-base_path: 'ooe-design-system/dist'
+base_path: 'ooe-design-system'
 site_name: 'Demo Static Site'
 site_description: 'A demonstration of a simple static site.'
 theme_color: '#1e407c'
