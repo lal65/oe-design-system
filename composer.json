@@ -1,0 +1,15 @@
+{
+    "name": "lal65/static-site-template",
+    "description": "Easily spin up on-brand, perfectly accessible static sites.",
+    "type": "project",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lal65/static-site-generator"
+        }
+    ],
+    "require-dev": {
+      "psu-ooe/static-site-generator": "dev-main"
+    }
+}
