@@ -8,6 +8,7 @@ page_title: 'Accessibility'
 page_subtitle_after: 'Design System Demo'
 page_image: 'index.jpg'
 menu_link_title: 'Accessibility'
+sort_order: 1
 ---
 
 The Penn State World Campus design system was developed with accessibility in mind, ensuring that all users, regardless of any disabilities, can easily navigate and interact with the website. The design system incorporates the Web Content Accessibility Guidelines (WCAG) AA criteria, which provides a higher level of accessibility than the basic Level A standards. By adhering to the WCAG AA guidelines, the World Campus design system ensures that users with visual, auditory, motor, or cognitive disabilities can access and engage with the online content effectively.

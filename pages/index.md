@@ -8,6 +8,7 @@ page_title: 'Welcome to your site!'
 page_subtitle_after: 'Design System Demo'
 page_image: 'index.jpg'
 menu_link_title: 'Home'
+sort_order: 0
 ---
 
 The World Campus design system static site generation service is a cutting-edge platform that is dedicated to producing top-of-the-line digital experiences. With a focus on security, performance, accessibility, and on-brand design, this service ensures that every website created is of the highest quality. By using a static site generation approach, websites built with this service are able to load quickly and efficiently, providing a seamless user experience for visitors.
