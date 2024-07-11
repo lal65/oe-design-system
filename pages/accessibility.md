@@ -3,9 +3,9 @@ title: 'Homepage'
 meta:
   robots: 'index, follow'
   description: 'Welcome to the demo static site homepage.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Design System'
 page_title: 'Accessibility'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 page_image: 'index.jpg'
 menu_link_title: 'Accessibility'
 sort_order: 1

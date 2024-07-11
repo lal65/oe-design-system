@@ -7,7 +7,7 @@ page_subtitle_before: 'Penn State World Campus'
 page_title: 'Colors'
 page_subtitle_after: 'Design System Demo'
 menu_link_title: 'Colors'
-sort_order: 1
+sort_order: 0
 ---
 {% apply markdown_to_html %}
   The color foundation of Penn State Outreach and Online Education, based on Penn State branding guidelines.

@@ -1,18 +1,17 @@
 ---
-title: 'Components - Molecules'
+title: 'Components - Organisms'
 meta:
   robots: 'index, follow'
   description: 'Explore the components that are available for use in the design system.'
 page_subtitle_before: 'Components'
-page_title: 'Molecules'
+page_title: 'Organisms'
 page_subtitle_after: 'Penn State World Campus'
-menu_link_title: 'Molecules'
+menu_link_title: 'Organisms'
 sort_order: 2
 ---
 
 {% apply markdown_to_html %}
-In a design system, molecules are the building blocks of a user interface. They are small, reusable components that can be combined and arranged to create more complex components or UI elements. Examples of molecules include buttons, input fields, cards, and checkboxes. By designing and documenting molecules within a design system, designers and developers can ensure consistency and efficiency across different parts of a product.
-## Explore the various molecules
+Organisms in a design system are components that are made up of groups of molecules and/or other organisms. They are the building blocks of a user interface and are usually more complex than molecules but less complex than templates. Organisms are often reusable and can be combined with other organisms to create more complex user interfaces.## Explore the various molecules
 {% endapply %}
 
 {% set grid_items = [] %}
@@ -27,3 +26,4 @@ link: { url: item['url'], label: item['title'] }
 {% include '@psu-ooe/grid/grid.twig' with {
 items: grid_items
 } only %}
+

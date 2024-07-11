@@ -3,9 +3,8 @@ title: 'Homepage'
 meta:
   robots: 'index, follow'
   description: 'Welcome to the demo static site homepage.'
-page_subtitle_before: 'Penn State World Campus'
-page_title: 'Welcome to your site!'
-page_subtitle_after: 'Design System Demo'
+page_title: 'Design System'
+page_subtitle_after: 'Penn State World Campus'
 page_image: 'index.jpg'
 menu_link_title: 'Home'
 sort_order: 0

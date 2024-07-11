@@ -3,9 +3,9 @@ title: 'Security'
 meta:
   robots: 'index, follow'
   description: 'Security is important..'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Design System'
 page_title: 'Security'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Security'
 sort_order: 2
 ---
