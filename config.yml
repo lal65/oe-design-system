@@ -1,6 +1,6 @@
 base_path: 'ooe-design-system'
-site_name: 'Demo Static Site'
-site_description: 'A demonstration of a simple static site.'
+site_name: 'Penn State World Camps Design System'
+site_description: 'The documentation and user handbook for the Penn State World Campus Design System.'
 theme_color: '#1e407c'
 tile_color: '#1e407c'
 background_color: '#1e407c'
