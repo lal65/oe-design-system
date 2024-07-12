@@ -6,8 +6,9 @@ meta:
 page_subtitle_before: 'Design System'
 page_title: 'Security'
 page_subtitle_after: 'Penn State World Campus'
+page_image: 'security.jpg'
 menu_link_title: 'Security'
-sort_order: 2
+sort_order: 1
 ---
 {% apply markdown_to_html %}
   Static sites are known for their simplicity and lack of dynamic components, making them inherently more secure than dynamic websites. Since static sites do not require a database or server-side scripting, they have a smaller attack surface and are less vulnerable to common web security threats such as SQL injection attacks and cross-site scripting. With less complexity in the codebase, there are fewer potential entry points for hackers to exploit, reducing the likelihood of security breaches.
