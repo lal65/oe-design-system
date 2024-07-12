@@ -25,17 +25,18 @@ sort_order: 0
   {% endapply %}
 {% endset %}
 
-{% set performance %}
-  {% apply markdown_to_html %}
-    ### Build for Speed
-    Performance is another important aspect of the World Campus design system static site generation service. By optimizing websites for speed and efficiency, users can enjoy fast loading times and smooth navigation. This not only improves the user experience but also helps to boost search engine rankings, as faster websites are favored by search engines like Google.
-  {% endapply %}
-{% endset %}
-
 {% set accessibility %}
   {% apply markdown_to_html %}
     ### Accessible by Default
-    Accessibility is also a top priority for the World Campus design system static site generation service. By adhering to accessibility standards and guidelines, websites built with this service are inclusive and can be easily accessed by all users, regardless of their abilities. This ensures that everyone can access and interact with the digital experiences created using this service, promoting equality and inclusivity online.
+    Accessibility is a top priority for the World Campus design system static site generation service. By adhering to accessibility standards and guidelines, websites built with this service are inclusive and can be easily accessed by all users, regardless of their abilities. This ensures that everyone can access and interact with the digital experiences created using this service, promoting equality and inclusivity online.
+  {% endapply %}
+
+{% endset %}
+
+{% set performance %}
+  {% apply markdown_to_html %}
+    ### Build for Speed
+    Performance is a key aspect of the World Campus design system static site generation service. By optimizing websites for speed and efficiency, users can enjoy fast loading times and smooth navigation. This not only improves the user experience but also helps to boost search engine rankings, as faster websites are favored by search engines like Google.
   {% endapply %}
 {% endset %}
 
