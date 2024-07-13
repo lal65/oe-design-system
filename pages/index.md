@@ -10,48 +10,76 @@ page_image: 'index.jpg'
 menu_link_title: 'Home'
 sort_order: 0
 ---
+<br><br>
 {% apply markdown_to_html %}
-  <br>
-  <br>
-
   ## Introducing the Penn State World Campus Design System.
-
-  The World Campus design system static site generation service is a cutting-edge platform that is dedicated to producing top-of-the-line digital experiences. With a focus on security, performance, accessibility, and on-brand design, this service ensures that every website created is of the highest quality. By using a static site generation approach, websites built with this service are able to load quickly and efficiently, providing a seamless user experience for visitors.
+  The World Campus Design System is a cutting-edge platform that is dedicated
+  to producing top-of-the-line digital experiences. With a focus on
+  accessibility, security, performance, and the Penn State brand, this 
+  platform ensures that every website created with it is of the highest
+  quality.
 {% endapply %}
-{% set security %}
-  {% apply markdown_to_html %}
-  ### Security Without Compromise
-  One of the key benefits of using the World Campus design system static site generation service is its emphasis on security. By following best practices and implementing robust security measures, websites created with this service are protected against potential threats and data breaches. This gives users peace of mind knowing that their personal information is safe and secure when interacting with websites built using this service.
-  {% endapply %}
-{% endset %}
 
 {% set accessibility %}
   {% apply markdown_to_html %}
-    ### Accessible by Default
-    Accessibility is a top priority for the World Campus design system static site generation service. By adhering to accessibility standards and guidelines, websites built with this service are inclusive and can be easily accessed by all users, regardless of their abilities. This ensures that everyone can access and interact with the digital experiences created using this service, promoting equality and inclusivity online.
+    ### Accessible <span class="text--contrasting">by Default</span>
+    Accessibility is ***the*** top priority for the World Campus design. By
+    adhering to accessibility standards and guidelines, websites built with
+    this platform are inclusive and can be easily accessed by all users,
+    regardless of their abilities.
   {% endapply %}
+  {% include '@psu-ooe/read-more/read-more.twig' with {
+    url: '/accessibility',
+    title: 'Discover how we make Penn State more accessible'
+  } only %}
+{% endset %}
 
+{% set security %}
+  {% apply markdown_to_html %}
+    ### Security <span class="text--contrasting">Without Compromise</span>
+    One of the key benefits of using the World Campus design system is its
+    emphasis on security. By following best practices, websites created with
+    this platform are protected against potential threats and data breaches.
+  {% endapply %}
+  {% include '@psu-ooe/read-more/read-more.twig' with {
+    url: '/security',
+    title: 'Explore our security mechanisms'
+  } only %}
 {% endset %}
 
 {% set performance %}
   {% apply markdown_to_html %}
-    ### Build for Speed
-    Performance is a key aspect of the World Campus design system static site generation service. By optimizing websites for speed and efficiency, users can enjoy fast loading times and smooth navigation. This not only improves the user experience but also helps to boost search engine rankings, as faster websites are favored by search engines like Google.
+    ### Optimized <span class="text--contrasting">for Speed</span>
+    Performance is a key aspect of the World Campus design system. By
+    optimizing for speed and efficiency, end-users enjoy lightning fast, 
+    low-carbon digital experiences. Tested against Web Vital metrics, site
+    owners reap the SEO benefits.
   {% endapply %}
+  {% include '@psu-ooe/read-more/read-more.twig' with {
+    url: '/performance',
+    title: 'Recognize what ethical web design looks like'
+  } only %}
 {% endset %}
 
 {% set brand %}
   {% apply markdown_to_html %}
-    ### On Brand. Always.
-    The World Campus design system static site generation service helps to maintain a consistent and on-brand design across all digital experiences. By providing a set of design guidelines and templates, websites built using this service can maintain a cohesive and professional look that aligns with the organization's brand identity. This not only creates a seamless user experience but also helps to build brand recognition and credibility online. Overall, the World Campus design system static site generation service is a valuable tool for creating world-class digital experiences that are secure, performant, accessible, and on-brand.
+    ### On Brand. <span class="text--contrasting">Always.</span>
+    The World Campus design system helps to maintain a consistent and
+    professional design across all digital experiences that aligns with the
+    Penn State brand identity.
   {% endapply %}
+  {% include '@psu-ooe/read-more/read-more.twig' with {
+    url: '/brand',
+    title: 'Learn how we align with the Penn State brand'
+  } only %}
 {% endset %}
-
+<br>
 {% include '@psu-ooe/icon-list/icon-list.twig' with {
+  columns: 2,
   items: [
-    { content: security, icon: 'fas-lightbulb-on' },
     { content: accessibility, icon: 'fas-child-reaching' },
-    { content: performance, icon: 'fas-circle-bolt' },
+    { content: security, icon: 'fas-lightbulb-on' },
+    { content: performance, icon: 'fas-bolt' },
     { content: brand, icon: 'fas-list-check' },
   ],
 } only %}
