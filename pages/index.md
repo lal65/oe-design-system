@@ -29,7 +29,7 @@ sort_order: 0
     regardless of their abilities.
   {% endapply %}
   {% include '@psu-ooe/read-more/read-more.twig' with {
-    url: '/accessibility',
+    url: '/' ~ (base_path ? base_path ~ '/') ~ 'accessibility',
     title: 'Discover how we make Penn State more accessible'
   } only %}
 {% endset %}
@@ -42,7 +42,7 @@ sort_order: 0
     this platform are protected against potential threats and data breaches.
   {% endapply %}
   {% include '@psu-ooe/read-more/read-more.twig' with {
-    url: '/security',
+    url: '/' ~ (base_path ? base_path ~ '/') ~ 'security',
     title: 'Explore our security mechanisms'
   } only %}
 {% endset %}
@@ -56,7 +56,7 @@ sort_order: 0
     owners reap the SEO benefits.
   {% endapply %}
   {% include '@psu-ooe/read-more/read-more.twig' with {
-    url: '/performance',
+    url: '/' ~ (base_path ? base_path ~ '/') ~ 'performance',
     title: 'Recognize what ethical web design looks like'
   } only %}
 {% endset %}
@@ -69,7 +69,7 @@ sort_order: 0
     Penn State brand identity.
   {% endapply %}
   {% include '@psu-ooe/read-more/read-more.twig' with {
-    url: '/brand',
+    url: '/' ~ (base_path ? base_path ~ '/') ~ 'brand',
     title: 'Learn how we align with the Penn State brand'
   } only %}
 {% endset %}
