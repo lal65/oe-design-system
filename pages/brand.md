@@ -8,7 +8,7 @@ page_title: 'Brand'
 page_subtitle_after: 'Penn State World Campus'
 page_image: 'brand.jpg'
 menu_link_title: 'Brand'
-sort_order: 3
+sort_order: 4
 ---
 {% apply markdown_to_html %}
   The Penn State World Campus Design System aligns perfectly with Penn State brand guidelines when it comes to color. The use of the signature Penn State blue and white colors in the design system creates a cohesive and recognizable look that immediately links the World Campus to the larger Penn State brand. The consistent use of these colors throughout the design system helps to reinforce brand recognition and create a sense of unity across all World Campus materials.
