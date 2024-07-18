@@ -1,7 +1,7 @@
 ---
 title: 'Homepage'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Penn State World Campus Design System Handbook.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Design System'

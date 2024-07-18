@@ -1,7 +1,7 @@
 ---
 title: 'Components - Breakpoints'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Although generally discouraged, certain named breakpoints are supported.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Breakpoints'

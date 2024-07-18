@@ -1,7 +1,7 @@
 ---
 title: 'Components - Fonts'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Discover the fonts that are available for use.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Fonts'

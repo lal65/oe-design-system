@@ -1,7 +1,7 @@
 ---
 title: 'Components - Atoms - Headings'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Explore the components that are available for use in the design system.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Headings'

@@ -1,7 +1,7 @@
 ---
 title: 'Components - Colors'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'The design system color palette, based on the Penn State Brand Book.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Colors'

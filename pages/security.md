@@ -1,7 +1,7 @@
 ---
 title: 'Security'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Security is important..'
 page_subtitle_before: 'Design System'
 page_title: 'Security'

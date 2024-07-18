@@ -1,7 +1,7 @@
 ---
 title: 'Components - Text'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Learn more about the various typographical utilities.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Text'

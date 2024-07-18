@@ -1,7 +1,7 @@
 ---
 title: 'Homepage'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Welcome to the demo static site homepage.'
 page_subtitle_before: 'Design System'
 page_title: 'Brand'

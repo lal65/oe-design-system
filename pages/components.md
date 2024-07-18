@@ -1,7 +1,7 @@
 ---
 title: 'Components'
 meta:
-  robots: 'index, follow'
+  robots: 'noindex, nofollow'
   description: 'Explore the components that are available for use in the design system.'
 page_subtitle_before: 'Design System'
 page_title: 'Components'
