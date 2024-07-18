@@ -2,7 +2,7 @@
 title: 'Components - Text'
 meta:
   robots: 'index, follow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Learn more about the various typographical utilities.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Text'
 page_subtitle_after: 'Design System Demo'

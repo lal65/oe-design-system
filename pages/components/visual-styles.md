@@ -19,7 +19,7 @@ sort_order: 0
   - Spacing and layout: Consistent use of margins, padding, and grid systems to create a harmonious and balanced layout across all interfaces.
   - Visual hierarchy: Consistent use of hierarchy and emphasis to guide users' attention and help them navigate through the interface efficiently.
   By establishing and documenting these visual styles in a design system, designers and developers can ensure a seamless and cohesive user experience across different platforms and devices.
-  ## Explore the visual styles of the World Campus Design System
+  ## Explore the visual aspects of the World Campus Design System
 {% endapply %}
 
 {% set grid_items = [] %}
@@ -30,10 +30,12 @@ sort_order: 0
           url: item['url'],
           label: item['title'],
         },
+        description: item['description'],
       } only %}
     {% endset %}
   {% set grid_items = grid_items|merge([grid_item]) %}
 {% endfor %}
 {% include '@psu-ooe/grid/grid.twig' with {
-  items: grid_items
+  items: grid_items,
+  columns: 2,
 } only %}

@@ -2,7 +2,7 @@
 title: 'Components - Fonts'
 meta:
   robots: 'index, follow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Discover the fonts that are available for use.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Fonts'
 page_subtitle_after: 'Design System Demo'

@@ -2,7 +2,7 @@
 title: 'Components - Breakpoints'
 meta:
   robots: 'index, follow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Although generally discouraged, certain named breakpoints are supported.'
 page_subtitle_before: 'Penn State World Campus'
 page_title: 'Breakpoints'
 page_subtitle_after: 'Design System Demo'
