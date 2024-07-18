@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lal65/static-site-generator.git",
-                "reference": "fc85409a6cb070ebd0b149b53a2ab1c553fec4fd"
+                "reference": "ca7bce7b05fe733c558b52a43f05d83e09912736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lal65/static-site-generator/zipball/fc85409a6cb070ebd0b149b53a2ab1c553fec4fd",
-                "reference": "fc85409a6cb070ebd0b149b53a2ab1c553fec4fd",
+                "url": "https://api.github.com/repos/lal65/static-site-generator/zipball/ca7bce7b05fe733c558b52a43f05d83e09912736",
+                "reference": "ca7bce7b05fe733c558b52a43f05d83e09912736",
                 "shasum": ""
             },
             "require": {
@@ -551,7 +551,7 @@
                 "source": "https://github.com/lal65/static-site-generator/tree/main",
                 "issues": "https://github.com/lal65/static-site-generator/issues"
             },
-            "time": "2024-07-18T17:13:27+00:00"
+            "time": "2024-07-18T17:44:26+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
