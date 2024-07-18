@@ -7,7 +7,7 @@ page_subtitle_before: 'Penn State World Campus'
 page_title: 'Fonts'
 page_subtitle_after: 'Design System Demo'
 menu_link_title: 'Fonts'
-sort_order: 1
+sort_order: 2
 ---
 {% set fonts = {
   'Proxima Nova': {
