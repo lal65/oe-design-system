@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lal65/static-site-generator.git",
-                "reference": "e1cf3db83d7879b2aad1d6c9f2d9782119071c16"
+                "reference": "2ae461304a72e292d918c85a8936163458a5056e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lal65/static-site-generator/zipball/e1cf3db83d7879b2aad1d6c9f2d9782119071c16",
-                "reference": "e1cf3db83d7879b2aad1d6c9f2d9782119071c16",
+                "url": "https://api.github.com/repos/lal65/static-site-generator/zipball/2ae461304a72e292d918c85a8936163458a5056e",
+                "reference": "2ae461304a72e292d918c85a8936163458a5056e",
                 "shasum": ""
             },
             "require": {
@@ -551,7 +551,7 @@
                 "source": "https://github.com/lal65/static-site-generator/tree/main",
                 "issues": "https://github.com/lal65/static-site-generator/issues"
             },
-            "time": "2024-07-13T03:30:36+00:00"
+            "time": "2024-07-18T16:16:59+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1018,12 +1018,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "6b6aca52063b5c632b08286c23122372be1dc49f"
+                "reference": "1377f2da4efa020d2ad9b8fb8b722d688ab297ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6b6aca52063b5c632b08286c23122372be1dc49f",
-                "reference": "6b6aca52063b5c632b08286c23122372be1dc49f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1377f2da4efa020d2ad9b8fb8b722d688ab297ad",
+                "reference": "1377f2da4efa020d2ad9b8fb8b722d688ab297ad",
                 "shasum": ""
             },
             "require": {
@@ -1091,7 +1091,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-10T05:46:18+00:00"
+            "time": "2024-07-14T11:59:09+00:00"
         }
     ],
     "aliases": [],
