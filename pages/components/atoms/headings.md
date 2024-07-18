@@ -23,61 +23,133 @@ sort_order: 0
   than heading level 3.
 {% endapply %}
 
+{% set installation %}
+  {% apply markdown_to_html %}
+    ## Installation
+    Install just like any other NPM package.
+    ### NPM
+    ```bash
+    npm install @psu-ooe/heading
+    ```
+  {% endapply %}
+{% endset %}
+
+{% set usage %}
+  {% apply markdown_to_html %}
+    ## Usage
+    Twig example:
+  {% endapply %}
+  <code><pre class="ds-example">{% verbatim %}
+{% include '@psu-ooe/heading/heading.twig' with {
+  content: 'The heading content',
+} only %}{% endverbatim %}</pre></code>
+{% endset %}
+
 {% set documentation %}
   {% apply markdown_to_html %}
   ## Variables
-  | Variable     | Type    | Required | Description                                                                 |
-  |--------------|---------|----------|-----------------------------------------------------------------------------|
-  | content      | string  | true     | The content to render within the heading. May contain arbitrary HTML.       |
-  | level        | integer | false    | An integer, between 1 and 6 that denotes the heading level.  Defaults to 2. |
-  | size         | string  | false    | Must match a documented size modifier (below).                              |
-  | align        | string  | false    | Must match a documented align modifier (below).                             |
-  | vspace       | string  | false    | Must match a documented vertical space modifier (below).                    |
-  | position     | string  | false    | Must match a documented position modifier (below).                          |
-  | no_overline  | boolean | false    | If specified, the heading will never render with an overline decoration.    |
-  | reversed     | boolean | false    | If specified, the heading will render with an inverse color profile         |
-  | subtle       | boolean | false    | If specified, the heading will render with a subtle look.                   |
-  
-  ### Size modifiers
-  | Size    | Description                         |
-  |---------|-------------------------------------|
-  | xlarge  | This style looks like an &lt;h1&gt; |
-  | large   | This style looks like an &lt;h2&gt; |
-  | medium  | This style looks like an &lt;h3&gt; |
-  | small   | This style looks like an &lt;h4&gt; |
-  | xsmall  | This style looks like an &lt;h5&gt; |
-  | 2xsmall | This style looks like an &lt;h6&gt; |
-  
-  ### Position modifiers
-  | Modifier | Description                                                                                 |
-  |----------|---------------------------------------------------------------------------------------------|
-  | flush    | If specified, the heading will be shifted up to avoid extra space in the upper line-height. |
-  
-  ### Align modifiers
-  | Modifier | Description                                       |
-  |----------|---------------------------------------------------|
-  | left     | If specified, the heading will be left aligned.   |
-  | center   | If specified, the heading will be center aligned. |
-  | right    | If specified, the heading will be right aligned.  |
-  
-  ### Vertical space modifiers
-  | Modifier | Description                                               |
-  |----------|-----------------------------------------------------------|
-  | none     | If specified, the heading will have no margin bottom      |
-  | small    | If specified, the heading will have a small margin bottom |
-  | large    | If specified, the heading will have a large margin bottom |
+  | Variable    | Type    | Required | Description                                                                 |
+  |-------------|---------|----------|-----------------------------------------------------------------------------|
+  | content     | string  | true     | The content to render within the heading. May contain arbitrary HTML.       |
+  | level       | integer | false    | An integer, between 1 and 6 that denotes the heading level.  Defaults to 2. |
+  | size        | string  | false    | Must match a documented size modifier.                                      |
+  | align       | string  | false    | Must match a documented align modifier.                                     |
+  | vspace      | string  | false    | Must match a documented vertical space modifier.                            |
+  | position    | string  | false    | Must match a documented position modifier.                                  |
+  | no_overline | boolean | false    | If specified, the heading will never render with an overline decoration.    |
+  | reversed    | boolean | false    | If specified, the heading will render with an inverse color profile         |
+  | subtle      | boolean | false    | If specified, the heading will render with a subtle look.                   |  
+  {% endapply %}
+{% endset %}
+
+{% set modifiers %}
+  {% apply markdown_to_html %}
+    ## Modifiers
+    Size, position, alignment, and vertical space may be customized.
+    ### Size modifiers
+    | Size    | Description                         |
+      |---------|-------------------------------------|
+    | xlarge  | This style looks like an &lt;h1&gt; |
+    | large   | This style looks like an &lt;h2&gt; |
+    | medium  | This style looks like an &lt;h3&gt; |
+    | small   | This style looks like an &lt;h4&gt; |
+    | xsmall  | This style looks like an &lt;h5&gt; |
+    | 2xsmall | This style looks like an &lt;h6&gt; |
+    
+    ### Position modifiers
+    | Modifier | Description                                                                                 |
+      |----------|---------------------------------------------------------------------------------------------|
+    | flush    | If specified, the heading will be shifted up to avoid extra space in the upper line-height. |
+    
+    ### Align modifiers
+    | Modifier | Description                                       |
+      |----------|---------------------------------------------------|
+    | left     | If specified, the heading will be left aligned.   |
+    | center   | If specified, the heading will be center aligned. |
+    | right    | If specified, the heading will be right aligned.  |
+    
+    ### Vertical space modifiers
+    | Modifier | Description                                               |
+      |----------|-----------------------------------------------------------|
+    | none     | If specified, the heading will have no margin bottom      |
+    | small    | If specified, the heading will have a small margin bottom |
+    | large    | If specified, the heading will have a large margin bottom |
   {% endapply %}
 {% endset %}
 {% set source_code %}
+  {% apply markdown_to_html %}
+    ### heading.twig
+  {% endapply %}
   <code>
     <pre class="ds-example">
       {{- source('@psu-ooe/heading/heading.twig') -}}
     </pre>
   </code>
 {% endset %}
+
 {% include '@psu-ooe/tabs/tabs.twig' with {
   tabs: [
-    { id: 'heading-variables'|clean_unique_id, title: 'Documentation', content: documentation },
+    { id: 'heading-installation'|clean_unique_id, title: 'Installation', content: installation },
+    { id: 'heading-usage'|clean_unique_id, title: 'Usage', content: usage },
+    { id: 'heading-variables'|clean_unique_id, title: 'Variables', content: documentation },
+    { id: 'heading-modifiers'|clean_unique_id, title: 'Modifiers', content: modifiers },
     { id: 'heading-source'|clean_unique_id, title: 'Source code', content: source_code },
   ],
 } only %}
+<br>
+<br>
+{% apply markdown_to_html %}
+  ## Examples
+{% endapply %}
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 1,
+  content: "Heading 1: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 2,
+  content: "Heading 2: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 3,
+  content: "Heading 3: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 4,
+  content: "Heading 4: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
+
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 5,
+  content: "Heading 5: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
+
+{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+  level: 6,
+  content: "Heading 6: The quick brown fox jumps over the lazy dog",
+} only %}', ['light', 'dark'])|raw }}
+<br>
