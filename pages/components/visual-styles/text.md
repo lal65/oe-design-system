@@ -43,6 +43,27 @@ sort_order: 3
 {% endfor %}
 
 {% apply markdown_to_html %}
+  ## Text density modifiers
+  There are 6 text density modifiers. These modifiers are typically only used
+  in very specific scenarios where specialized custom typography configurations
+  are applied.
+{% endapply %}
+{% for density in ['msnug', 'snug', 'xsnug', '2xsnug', '3xsnug', 'nospace'] %}
+  {% apply markdown_to_html %}
+  ### {{ density|capitalize }}
+  {% endapply %}
+  {% if density == 'nospace' %}
+    {% include '@psu-ooe/alert/alert.twig' with {
+      severity: 'warning',
+      content: 'Use caution in where the nospace modifier is used. Some users may have difficulty reading the content!',
+    } only %}
+  {% endif %}
+  <br>
+  {{ example('<span class="text text--height-' ~ density ~ '">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
+  <br>
+{% endfor %}
+
+{% apply markdown_to_html %}
   ## Text size modifiers
   There are 15 supported text size modifiers. Certain modifiers may have
   varying actual sizes based on viewport and/or container dimensions.
@@ -54,3 +75,30 @@ sort_order: 3
   {{ example('<span class="text text--size-' ~ size ~ '">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
   <br>
 {% endfor %}
+
+{% apply markdown_to_html %}
+  ## Advanced
+  There are a few advanced / niche use cases for text utilities, but should
+  only be used with caution.
+
+  ### Forced color override: slate
+  The slate color can be used for text, however it is not auto-contrast
+  friendly.
+{% endapply %}
+
+{{ example('<span class="text text--color-slate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
+<br>
+{% apply markdown_to_html %}
+### Forced color override: reversed
+The reversed color can be used for text, however it is not auto-contrast
+friendly. This variant will eventually become deprecated.
+{% endapply %}
+{{ example('<span class="text text--color-reversed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
+<br>
+
+{% apply markdown_to_html %}
+  ### Forced color override: contrasting
+  The contrasting text mode is used to make certain text stand out in proximity
+  to text around it, however it is not auto-contrast friendly. 
+{% endapply %}
+  {{ example('<span class="text text--contrasting">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
