@@ -120,6 +120,7 @@ sort_order: 0
 <br>
 {% apply markdown_to_html %}
   ## Examples
+  ### Defaults
 {% endapply %}
 {{ example('{% include "@psu-ooe/heading/heading.twig" with {
   level: 1,
@@ -153,3 +154,34 @@ sort_order: 0
   content: "Heading 6: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
+
+{% apply markdown_to_html %}
+  ### Flushness
+{% endapply %}
+{{ example('
+{% for level in range(1, 6) %}
+  <div style="display: flex; flex-flow: row nowrap; gap: var(--text-element-vertical-space--default); margin-bottom: var(--text-element-vertical-space--default);">
+    {% include "@psu-ooe/heading/heading.twig" with {
+      content: "Should be flush with this box -->|",
+      level: level,
+      flush: true,
+      no_overline: true,
+    } only %}
+    <div style="background: lightgrey;width:50px;height:50px;"></div>
+  </div>
+{% endfor %}
+')|raw }}
+
+{% apply markdown_to_html %}
+### Vertical Spacing
+{% endapply %}
+{% for vspace in ["small", "medium", "large", "none"] %}
+  {{ example('
+    {% include "@psu-ooe/heading/heading.twig" with {
+      content: "This heading has " ~ (vspace == "none" ? "no space" : ("a ' ~ vspace ~ ' amount of space")) ~ " under it",
+      vspace: "' ~ vspace ~ '",
+    } only %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+')|raw }}
+<br>
+{% endfor %}

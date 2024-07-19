@@ -19,7 +19,8 @@ sort_order: 1
 {% for item in get_menu_items()['components']['below']['components/atoms']['below'] %}
   {% set grid_item %}
     {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-      link: { url: item['url'], label: item['title'] }
+      link: { url: item['url'], label: item['title'] },
+      description: item['description'],
     } only %}
   {% endset %}
   {% set grid_items = grid_items|merge([grid_item]) %}
