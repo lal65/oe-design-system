@@ -2,7 +2,7 @@
 title: 'Components - Visual styles'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Visual styles provide the look and feel of the design. They may include color schemes, spacing presets, and other utilities.'
 page_subtitle_before: 'Components'
 page_title: 'Visual Styles'
 page_subtitle_after: 'Penn State World Campus'

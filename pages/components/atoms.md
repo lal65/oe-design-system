@@ -2,7 +2,7 @@
 title: 'Components - Atoms'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Atoms form the smallest reusable units of a design. They may include features like headings, buttons, and other low level components.'
 page_subtitle_before: 'Components'
 page_title: 'Atoms'
 page_subtitle_after: 'Penn State World Campus'

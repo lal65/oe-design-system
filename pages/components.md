@@ -18,7 +18,9 @@ An atomic design system breaks down a design into its most basic elements, start
 {% for item in get_menu_items()['components']['below'] %}
   {% set grid_item %}
     {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-      link: { url: item['url'], label: item['title'] }
+      link: { url: item['url'], label: item['title'] },
+      description: item['description'],
+      chevron: true,
     } only %}
   {% endset %}
   {% set grid_items = grid_items|merge([grid_item]) %}

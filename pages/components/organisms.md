@@ -2,12 +2,12 @@
 title: 'Components - Organisms'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Organisms are complex higher order components that may be formed by the combination of many atoms and molecules.'
 page_subtitle_before: 'Components'
 page_title: 'Organisms'
 page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Organisms'
-sort_order: 2
+sort_order: 3
 ---
 
 {% apply markdown_to_html %}

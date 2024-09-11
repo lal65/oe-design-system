@@ -2,7 +2,7 @@
 title: 'Components - Molecules'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Explore the components that are available for use in the design system.'
+  description: 'Molecules are made up of various atoms working together. They may include button groups, various containers, and other elements that typically do not exist on their own.'
 page_subtitle_before: 'Components'
 page_title: 'Molecules'
 page_subtitle_after: 'Penn State World Campus'
