@@ -45,17 +45,9 @@ tabs: [
 } only %}
 <br>
 <br>
-{% apply markdown_to_html %}
-## Examples
-  <input type="date" />
-  <br>
-  <br>
-{% endapply %}
-
-{% set example_on_dark %}
-<input type="date">
-{% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
-background: 'blue-gradient',
-content: example_on_dark,
+{% include 'partials/input-examples.twig' with {
+  type: 'date',
+  variations: [
+    ['disabled'],
+  ],
 } only %}

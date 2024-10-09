@@ -45,17 +45,11 @@ sort_order: 0
 } only %}
 <br>
 <br>
-{% apply markdown_to_html %}
-  ## Examples
-  <input type="checkbox" />
-  <br>
-  <br>
-{% endapply %}
-
-{% set example_on_dark %}
-  <input type="checkbox">
-{% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
-  background: 'blue-gradient',
-  content: example_on_dark,
+{% include 'partials/input-examples.twig' with {
+  type: 'checkbox',
+  variations: [
+    ['disabled'],
+    ['checked'],
+    ['checked', 'disabled'],
+  ],
 } only %}

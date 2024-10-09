@@ -45,17 +45,11 @@ tabs: [
 } only %}
 <br>
 <br>
-{% apply markdown_to_html %}
-## Examples
-  <input type="file" />
-  <br>
-  <br>
-{% endapply %}
-
-{% set example_on_dark %}
-<input type="file">
-{% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
-background: 'blue-gradient',
-content: example_on_dark,
+{% include 'partials/input-examples.twig' with {
+  type: 'file',
+  variations: [
+    ['multiple'],
+    ['disabled'],
+    ['multiple', 'disabled'],
+  ],
 } only %}
