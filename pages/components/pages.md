@@ -14,20 +14,12 @@ sort_order: 7
   Pages are the highest order of component and are the most opinionated in
   nature.
 
-  ## Explore the various pages
 {% endapply %}
 
-{% set grid_items = [] %}
-{% for item in get_menu_items()['components']['below']['components/regions']['below'] %}
-  {% set grid_item %}
-    {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-      link: { url: item['url'], label: item['title'] }
-    } only %}
-  {% endset %}
-  {% set grid_items = grid_items|merge([grid_item]) %}
-{% endfor %}
-
-{% include '@psu-ooe/grid/grid.twig' with {
-  items: grid_items
+{% include 'partials/grid-submenu.twig' with {
+  heading: {
+    content: 'Explore the various pages',
+    level: 2,
+  },
+  path: 'components/pages',
 } only %}
-

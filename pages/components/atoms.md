@@ -17,20 +17,12 @@ sort_order: 1
   include things like headings, buttons, icons, and form elements. They serve
   as the foundation for building more complex design components and patterns
   within a system.
-  ## Explore the various atoms
 {% endapply %}
 
-{% set grid_items = [] %}
-{% for item in get_menu_items()['components']['below']['components/atoms']['below'] %}
-  {% set grid_item %}
-    {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-      link: { url: item['url'], label: item['title'] },
-      description: item['description'],
-    } only %}
-  {% endset %}
-  {% set grid_items = grid_items|merge([grid_item]) %}
-{% endfor %}
-
-{% include '@psu-ooe/grid/grid.twig' with {
-  items: grid_items
+{% include 'partials/grid-submenu.twig' with {
+  heading: {
+    content: 'Explore the various atoms',
+    level: 2,
+  },
+  path: 'components/atoms',
 } only %}

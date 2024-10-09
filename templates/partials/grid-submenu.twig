@@ -1,0 +1,24 @@
+{% set segments = '' %}
+{% set menu_items = get_menu_items() %}
+{% for segment in path|split('/') %}
+  {% set segments = segments ~ segment ~ '/' %}
+  {% set menu_items = menu_items[segments|trim('/', 'right')]['below'] %}
+{% endfor %}
+
+{% set grid_items = [] %}
+
+{% for item in menu_items %}
+  {% set grid_item %}
+    {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
+      link: { url: item['url'], label: item['title'] },
+      description: item['description'],
+    } only %}
+  {% endset %}
+  {% set grid_items = grid_items|merge([grid_item]) %}
+{% endfor %}
+{% if heading %}
+  {% include '@psu-ooe/heading/heading.twig' with heading only %}
+{% endif %}
+{% include '@psu-ooe/grid/grid.twig' with {
+  items: grid_items
+} only %}

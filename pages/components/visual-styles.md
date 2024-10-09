@@ -33,24 +33,12 @@ sort_order: 0
   By establishing and documenting these visual styles in a design system, 
   designers and developers can ensure a seamless and cohesive user experience
   across different platforms and devices.
-  
-  ## Explore the visual aspects of the World Campus Design System
 {% endapply %}
 
-{% set grid_items = [] %}
-  {% for item in get_menu_items()['components']['below']['components/visual-styles']['below'] %}
-    {% set grid_item %}
-      {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-        link: {
-          url: item['url'],
-          label: item['title'],
-        },
-        description: item['description'],
-      } only %}
-    {% endset %}
-  {% set grid_items = grid_items|merge([grid_item]) %}
-{% endfor %}
-{% include '@psu-ooe/grid/grid.twig' with {
-  items: grid_items,
-  columns: 2,
+{% include 'partials/grid-submenu.twig' with {
+  heading: {
+    content: 'Explore the various visual aspects',
+    level: 2,
+  },
+  path: 'components/visual-styles',
 } only %}

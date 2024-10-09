@@ -18,17 +18,6 @@ this section.
 
 ## Explore the various component classifications
 {% endapply %}
-{% set grid_items = [] %}
-{% for item in get_menu_items()['components']['below'] %}
-  {% set grid_item %}
-    {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
-      link: { url: item['url'], label: item['title'] },
-      description: item['description'],
-      chevron: true,
-    } only %}
-  {% endset %}
-  {% set grid_items = grid_items|merge([grid_item]) %}
-{% endfor %}
-{% include '@psu-ooe/grid/grid.twig' with {
-  items: grid_items
+{% include 'partials/grid-submenu.twig' with {
+  path: 'components',
 } only %}
