@@ -1,5 +1,5 @@
 ---
-title: 'Components - Atoms - Fieldset'
+title: 'Components - Atoms - Fieldsets'
 meta:
   robots: 'noindex, nofollow'
   description: 'Fieldsets are elements used to label and group several form controls.'
