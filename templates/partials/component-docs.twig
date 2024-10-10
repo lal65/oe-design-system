@@ -1,0 +1,36 @@
+{% set tabs = [] %}
+{% if installation %}
+  {% set installation_tab %}
+    {% include '@psu-ooe/heading/heading.twig' with { content: 'Installation', level: 2 } only %}
+    {% if installation.npm and installation.npm.package %}
+      {% include '@psu-ooe/heading/heading.twig' with { content: 'NPM', level: 3 } only %}
+      <code>
+        <pre class="ds-example">npm install @psu-ooe/{{ installation.npm.package }}</pre>
+      </code>
+    {% endif %}
+  {% endset %}
+  {% set tabs = tabs|merge([{ id: 'installation'|clean_unique_id, title: 'Installation', content: installation_tab }]) %}
+{% endif %}
+
+{% if usage %}
+  {% set usage_tab %}
+    {% include '@psu-ooe/heading/heading.twig' with { content: 'Usage', level: 2 } only %}
+    {% if usage.html %}
+      {% include '@psu-ooe/heading/heading.twig' with { content: 'HTML', level: 3 } only %}
+      <code>
+        <pre class="ds-example">{{ usage.html }}</pre>
+      </code>
+    {% endif %}
+    {% if usage.twig %}
+      {% include '@psu-ooe/heading/heading.twig' with { content: 'Twig', level: 3 } only %}
+      <code>
+        <pre class="ds-example">{{ usage.twig }}</pre>
+      </code>
+    {% endif %}
+  {% endset %}
+  {% set tabs = tabs|merge([{ id: 'usage'|clean_unique_id, title: 'Usage', content: usage_tab }]) %}
+{% endif %}
+
+{% include '@psu-ooe/tabs/tabs.twig' with {
+  tabs: tabs,
+} only %}

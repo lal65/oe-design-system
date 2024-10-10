@@ -13,35 +13,15 @@ sort_order: 0
 Inputs are a common form control that are assumed to be text inputs by default.
 {% endapply %}
 
-{% set installation %}
-{% apply markdown_to_html %}
-## Installation
-Input styles are currently provided through the input-common component.
-
-    ### NPM
-    ```bash
-      npm install @psu-ooe/input-common
-    ```
-{% endapply %}
-{% endset %}
-
-{% set usage %}
-{%- apply markdown_to_html -%}
-## Usage
-There is not yet a twig binding for inputs.  As such, the only way to render one is through HTML.
-{%- endapply -%}
-<code>
-<pre class="ds-example">
-&lt;input /&gt;
-</pre>
-</code>
-{% endset %}
-
-{% include '@psu-ooe/tabs/tabs.twig' with {
-tabs: [
-{ id: 'input-installation'|clean_unique_id, title: 'Installation', content: installation },
-{ id: 'input-usage'|clean_unique_id, title: 'Usage', content: usage },
-],
+{% include 'partials/component-docs.twig' with {
+  installation: {
+    npm: {
+      package: 'input-common',
+    },
+  },
+  usage: {
+    html: '<input>',
+  }
 } only %}
 <br>
 <br>

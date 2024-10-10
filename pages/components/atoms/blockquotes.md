@@ -13,38 +13,20 @@ sort_order: 1
   Blockquotes are used to display extended quotations. They may optionally display an attribution.
 {% endapply %}
 
-{% set installation %}
-  {% apply markdown_to_html %}
-    ## Installation
-    Blockquotes are currently provided through the design system base.
-    ### NPM
-    ```bash
-      npm install @psu-ooe/base
-    ```
-  {% endapply %}
-{% endset %}
-
-{% set usage %}
-  {% apply markdown_to_html %}
-    ## Usage
-    There is not yet a twig binding for blockquotes.  As such, the only way to render one is through HTML.
-  {% endapply %}
-  <code>
-    <pre class="ds-example">
-&lt;figure&gt;
-  &lt;blockquote>Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.&lt;/blockquote&gt;
-  &lt;figcaption&gt;—Martin Luther King Jr.&lt;/figcaption&gt;
-&lt;/figure&gt;
-    </pre>
-  </code>
-{%- endset -%}
-
-{% include '@psu-ooe/tabs/tabs.twig' with {
-tabs: [
-{ id: 'blockquote-installation'|clean_unique_id, title: 'Installation', content: installation },
-{ id: 'blockquote-usage'|clean_unique_id, title: 'Usage', content: usage },
-],
+{% include 'partials/component-docs.twig' with {
+  installation: {
+    npm: {
+      package: '@psu-ooe/base',
+    },
+  },
+  usage: {
+    html: '<figure>
+  <blockquote>Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.</blockquote>
+  <figcaption>—Martin Luther King Jr.</figcaption>
+</figure>',
+  }
 } only %}
+
 <br>
 <br>
 {% apply markdown_to_html %}

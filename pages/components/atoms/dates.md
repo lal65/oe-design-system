@@ -13,36 +13,17 @@ sort_order: 0
 Date inputs are a common form control for selecting a date.
 {% endapply %}
 
-{% set installation %}
-{% apply markdown_to_html %}
-  ## Installation
-  Date input styles are currently provided through the input-date component.
-
-  ### NPM
-  ```bash
-    npm install @psu-ooe/input-date
-  ```
-{% endapply %}
-{% endset %}
-
-{% set usage %}
-{%- apply markdown_to_html -%}
-## Usage
-There is not yet a twig binding for date inputs.  As such, the only way to render one is through HTML.
-{%- endapply -%}
-<code>
-<pre class="ds-example">
-&lt;input type="date" /&gt;
-</pre>
-</code>
-{% endset %}
-
-{% include '@psu-ooe/tabs/tabs.twig' with {
-tabs: [
-{ id: 'date-installation'|clean_unique_id, title: 'Installation', content: installation },
-{ id: 'date-usage'|clean_unique_id, title: 'Usage', content: usage },
-],
+{% include 'partials/component-docs.twig' with {
+  installation: {
+    npm: {
+      package: 'input-date',
+    },
+  },
+  usage: {
+    html: '<input type="date">',
+  }
 } only %}
+
 <br>
 <br>
 {% include 'partials/input-examples.twig' with {

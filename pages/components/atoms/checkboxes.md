@@ -13,36 +13,17 @@ sort_order: 0
   Checkboxes are a common form control for selecting on or off state.
 {% endapply %}
 
-{% set installation %}
-  {% apply markdown_to_html %}
-    ## Installation
-    Checkbox input styles are currently provided through the input-checkbox component.
-
-    ### NPM
-    ```bash
-      npm install @psu-ooe/input-checkbox
-    ```
-  {% endapply %}
-{% endset %}
-
-{% set usage %}
-  {%- apply markdown_to_html -%}
-    ## Usage
-      There is not yet a twig binding for checkbox inputs.  As such, the only way to render one is through HTML.
-  {%- endapply -%}
-  <code>
-    <pre class="ds-example">
-&lt;input type="checkbox" /&gt;
-    </pre>
-  </code>
-{% endset %}
-
-{% include '@psu-ooe/tabs/tabs.twig' with {
-  tabs: [
-    { id: 'checkbox-installation'|clean_unique_id, title: 'Installation', content: installation },
-    { id: 'checkbox-usage'|clean_unique_id, title: 'Usage', content: usage },
-  ],
+{% include 'partials/component-docs.twig' with {
+  installation: {
+    npm: {
+      package: 'input-checkbox',
+    },
+  },
+  usage: {
+    html: '<input type="checkbox">',
+  }
 } only %}
+
 <br>
 <br>
 {% include 'partials/input-examples.twig' with {
