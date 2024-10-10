@@ -3,9 +3,9 @@ title: 'Components - Atoms - Text Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'Text inputs are a common form control for entering generic single lines of text.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Text Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Text Inputs'
 sort_order: 0
 ---

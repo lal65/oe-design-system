@@ -3,9 +3,9 @@ title: 'Components - Atoms - Forms'
 meta:
   robots: 'noindex, nofollow'
   description: 'Forms are elements containing interactive controls for submitting information.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Forms'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Forms'
 sort_order: 0
 ---

@@ -3,9 +3,9 @@ title: 'Components - Atoms - Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'Inputs are a common form control that are assumed to be text inputs by default.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Inputs'
 sort_order: 0
 ---

@@ -3,9 +3,9 @@ title: 'Components - Atoms - Labels'
 meta:
   robots: 'noindex, nofollow'
   description: 'Labels are elements meant for captioning a user interface item.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Labels'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Labels'
 sort_order: 0
 ---

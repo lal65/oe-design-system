@@ -3,9 +3,9 @@ title: 'Components - Atoms - File Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'File inputs are a common form control for uploading one or more files.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'File Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'File Inputs'
 sort_order: 0
 ---

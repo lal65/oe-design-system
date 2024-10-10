@@ -3,9 +3,9 @@ title: 'Components - Molecules - Accordions'
 meta:
   robots: 'noindex, nofollow'
   description: 'Accordions are disclosure elements in which information is visible when open.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Molecules'
 page_title: 'Accordions'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Accordions'
 sort_order: 1
 ---
@@ -26,9 +26,6 @@ sort_order: 1
   | borderless       | boolean  | false    | If set, the accordion will render without borders.                                     |
   | heading_level      | string  | false    | If set, the accordion toggle will have heading semantics applied.                            |
   | heading_style    | string  | false    | If set, will override the heading style of the accordion toggle.                                  |
-  | no_overline | boolean | false    | If specified, the heading will never render with an overline decoration.    |
-  | reversed    | boolean | false    | If specified, the heading will render with an inverse color profile         |
-  | subtle      | boolean | false    | If specified, the heading will render with a subtle look.                   |  
   {% endapply %}
 {% endset %}
 

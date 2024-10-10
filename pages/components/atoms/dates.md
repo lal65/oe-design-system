@@ -3,9 +3,9 @@ title: 'Components - Atoms - Date Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'Date inputs are a common form control for selecting a date.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Date Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Date Inputs'
 sort_order: 0
 ---

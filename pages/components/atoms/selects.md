@@ -3,9 +3,9 @@ title: 'Components - Atoms - Selects'
 meta:
   robots: 'noindex, nofollow'
   description: 'Select elements are a common form control for choosing one or more options in a set.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Selects'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Selects'
 sort_order: 0
 ---

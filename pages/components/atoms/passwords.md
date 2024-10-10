@@ -3,9 +3,9 @@ title: 'Components - Atoms - Password Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'Password inputs are a common form control for entering a password.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Password Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Password Inputs'
 sort_order: 0
 ---

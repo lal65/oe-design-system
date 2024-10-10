@@ -3,9 +3,9 @@ title: 'Components - Atoms - Textareas'
 meta:
   robots: 'noindex, nofollow'
   description: 'Textareas are a common form control for entering generic multiple lines of text.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Textareas'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Textareas'
 sort_order: 0
 ---

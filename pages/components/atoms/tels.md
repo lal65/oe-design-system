@@ -3,9 +3,9 @@ title: 'Components - Atoms - Telephone Inputs'
 meta:
   robots: 'noindex, nofollow'
   description: 'Telephone inputs are a common form control for entering telephone numbers.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Telephone Inputs'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Telephone Inputs'
 sort_order: 0
 ---

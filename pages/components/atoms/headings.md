@@ -3,9 +3,9 @@ title: 'Components - Atoms - Headings'
 meta:
   robots: 'noindex, nofollow'
   description: 'Headings are used to logically group content under a common topic.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Headings'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Headings'
 sort_order: 0
 ---

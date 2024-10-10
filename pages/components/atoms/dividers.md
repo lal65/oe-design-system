@@ -3,9 +3,9 @@ title: 'Components - Atoms - Dividers'
 meta:
   robots: 'noindex, nofollow'
   description: 'Dividers provide visual separation between sections of content.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Dividers'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Dividers'
 sort_order: 0
 ---

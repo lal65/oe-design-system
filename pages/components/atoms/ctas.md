@@ -3,9 +3,9 @@ title: 'Components - Atoms - Call to action links'
 meta:
   robots: 'noindex, nofollow'
   description: 'Call to action links special purpose link buttons.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Call to action links'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Call to action links'
 sort_order: 0
 ---

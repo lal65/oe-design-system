@@ -3,9 +3,9 @@ title: 'Components - Atoms - Block Quotations'
 meta:
   robots: 'noindex, nofollow'
   description: 'Block quotations are used to display extended quotations.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Block Quotations'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Block Quotations'
 sort_order: 1
 ---

@@ -3,9 +3,9 @@ title: 'Components - Atoms - Legends'
 meta:
   robots: 'noindex, nofollow'
   description: 'Legends are elements meant for captioning a fieldset.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Legends'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Legends'
 sort_order: 0
 ---

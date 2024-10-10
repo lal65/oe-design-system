@@ -3,9 +3,9 @@ title: 'Components - Atoms - Details'
 meta:
   robots: 'noindex, nofollow'
   description: 'Details are disclosure elements in which information is visible when open.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Details'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Details'
 sort_order: 0
 ---

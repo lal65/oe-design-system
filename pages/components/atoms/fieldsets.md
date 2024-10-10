@@ -3,9 +3,9 @@ title: 'Components - Atoms - Fieldsets'
 meta:
   robots: 'noindex, nofollow'
   description: 'Fieldsets are elements used to label and group several form controls.'
-page_subtitle_before: 'Penn State World Campus'
+page_subtitle_before: 'Atoms'
 page_title: 'Fieldsets'
-page_subtitle_after: 'Design System Demo'
+page_subtitle_after: 'Penn State World Campus'
 menu_link_title: 'Fieldsets'
 sort_order: 0
 ---
