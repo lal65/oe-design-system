@@ -25,6 +25,7 @@ sort_order: 1
   | heading_level      | integer | false    | An integer, between 1 and 6 that denotes the heading level. If provided, the accordion toggle will have heading semantics applied. |
   | heading_style      | string  | false    | If set, will override the heading style of the accordion toggle.                                                                   |
   | expanded           | boolean | false    | If set, the accordion will be expanded by default.                                                                                 |
+  | indent_content     | boolean | false    | If set, the expandable content will be indented.                                                                                   |
   | label_underline    | boolean | false    | If set, the accordion label will be underlined.                                                                                    |
   | borderless         | boolean | false    | If set, the accordion will render without borders.                                                                                 |
   {% endapply %}
@@ -131,6 +132,3 @@ sort_order: 1
     },
   ],
 } only %}
-
-<br>
-<br>
