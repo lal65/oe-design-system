@@ -31,6 +31,14 @@
   {% set tabs = tabs|merge([{ id: 'usage'|clean_unique_id, title: 'Usage', content: usage_tab }]) %}
 {% endif %}
 
+{% if variables %}
+  {% set variables_tab %}
+    {% include '@psu-ooe/heading/heading.twig' with { content: 'Variables', level: 2 } only %}
+    {{ variables }}
+  {% endset %}
+  {% set tabs = tabs|merge([{ id: 'variables'|clean_unique_id, title: 'Variables', content: variables_tab }]) %}
+{% endif %}
+
 {% include '@psu-ooe/tabs/tabs.twig' with {
   tabs: tabs,
 } only %}
