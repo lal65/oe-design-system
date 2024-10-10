@@ -39,6 +39,58 @@
   {% set tabs = tabs|merge([{ id: 'variables'|clean_unique_id, title: 'Variables', content: variables_tab }]) %}
 {% endif %}
 
+{% if modifiers %}
+  {% set modifiers_tab %}
+    {% include '@psu-ooe/heading/heading.twig' with { content: 'Modifiers', level: 2 } only %}
+    {{ modifiers }}
+  {% endset %}
+  {% set tabs = tabs|merge([{ id: 'modifiers'|clean_unique_id, title: 'Modifiers', content: modifiers_tab }]) %}
+{% endif %}
 {% include '@psu-ooe/tabs/tabs.twig' with {
   tabs: tabs,
 } only %}
+
+{% if examples %}
+  <br><br>
+  {% include '@psu-ooe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
+  {% for example in examples %}
+    {% set example_content %}
+      {{ include(template_from_string(example.content)) }}
+    {% endset %}
+    {% set example_on_light %}
+      {% include '@psu-ooe/callout/callout.twig' with {
+        content: example_content,
+        shadow: 'standard',
+      } only %}
+    {% endset %}
+    {% set example_on_dark %}
+      {% include '@psu-ooe/callout/callout.twig' with {
+        content: example_content,
+        background: 'blue-gradient',
+      } only %}
+    {% endset %}
+    {% set twig_code %}
+      <code>
+        <pre class="ds-example">
+          {{- example.content -}}
+        </pre>
+      </code>
+    {% endset %}
+    {% set html_code %}
+      <code>
+        <pre class="ds-example">
+          {{- example_content|trim|escape -}}
+        </pre>
+      </code>
+    {% endset %}
+    {% include '@psu-ooe/tabs/tabs.twig' with {
+      tabs: [
+        { id: 'example'|clean_unique_id, title: example.label, content: example_on_light },
+        { id: 'dark-mode'|clean_unique_id, title: 'Dark mode', content: example_on_dark },
+        { id: 'twig'|clean_unique_id, title: 'Twig source', content: twig_code },
+        { id: 'html'|clean_unique_id, title: 'Html source', content: html_code },
+      ],
+    } only %}
+    <br><br>
+  {% endfor %}
+{% endif %}
