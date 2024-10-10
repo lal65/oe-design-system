@@ -58,16 +58,24 @@
       {{ include(template_from_string(example.content)) }}
     {% endset %}
     {% set example_on_light %}
-      {% include '@psu-ooe/callout/callout.twig' with {
-        content: example_content,
-        shadow: 'standard',
-      } only %}
+      {% if example.unwrapped %}
+        {{ example_content }}
+      {% else %}
+        {% include '@psu-ooe/callout/callout.twig' with {
+          content: example_content,
+          shadow: 'standard',
+        } only %}
+      {% endif %}
     {% endset %}
     {% set example_on_dark %}
-      {% include '@psu-ooe/callout/callout.twig' with {
-        content: example_content,
-        background: 'blue-gradient',
-      } only %}
+      {% if example.unwrapped %}
+        {{ example_content }}
+      {% else %}
+        {% include '@psu-ooe/callout/callout.twig' with {
+          content: example_content,
+          background: 'blue-gradient',
+        } only %}
+      {% endif %}
     {% endset %}
     {% set twig_code %}
       <code>
@@ -84,12 +92,13 @@
       </code>
     {% endset %}
     {% include '@psu-ooe/tabs/tabs.twig' with {
+      expand_to_fit: true,
       tabs: [
         { id: 'example'|clean_unique_id, title: example.label, content: example_on_light },
-        { id: 'dark-mode'|clean_unique_id, title: 'Dark mode', content: example_on_dark },
+        not example.unwrapped ? { id: 'dark-mode'|clean_unique_id, title: 'Dark mode', content: example_on_dark },
         { id: 'twig'|clean_unique_id, title: 'Twig source', content: twig_code },
         { id: 'html'|clean_unique_id, title: 'Html source', content: html_code },
-      ],
+      ]|filter(tab => tab is not empty),
     } only %}
     <br><br>
   {% endfor %}
