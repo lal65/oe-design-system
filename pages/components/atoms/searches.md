@@ -1,33 +1,33 @@
 ---
-title: 'Components - Atoms - Radio Inputs'
+title: 'Components - Atoms - Search Inputs'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Radio inputs are a common form control for choosing one option in a small set.'
+  description: 'Search inputs are a common form control for entering search terms.'
 page_subtitle_before: 'Penn State World Campus'
-page_title: 'Radio Inputs'
+page_title: 'Search Inputs'
 page_subtitle_after: 'Design System Demo'
-menu_link_title: 'Radio Inputs'
+menu_link_title: 'Search Inputs'
 sort_order: 0
 ---
 {% apply markdown_to_html %}
-Radio inputs are a common form control for choosing one option in a small set.
+Search inputs are a common form control for entering search terms.
 {% endapply %}
 
 {% include 'partials/component-docs.twig' with {
   installation: {
     npm: {
-      package: 'input-radio',
+      package: 'input-search',
     },
   },
   usage: {
-    html: '<input type="radio">',
+    html: '<input type="search">',
   }
 } only %}
 <br>
 <br>
 {% include 'partials/input-examples.twig' with {
-  type: 'radio',
+  type: 'search',
   variations: [
     ['disabled'],
   ],
-} only %}`
+} only %}
