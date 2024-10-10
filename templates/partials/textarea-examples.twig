@@ -1,0 +1,16 @@
+{% include '@psu-ooe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
+{% set examples %}
+  <label style="display: flex; align-items: center; gap: 1rem;">{{ type|capitalize }}<textarea></textarea></label>
+  <br>
+  {% for variation in variations %}
+    <label style="display: flex; align-items: center; gap: 1rem;">{{ type|capitalize }} ({{ variation|join(',') }})<textarea {{ variation|join(' ') }}></textarea></label>
+    <br>
+  {% endfor %}
+  <label style="display: flex; align-items: center; gap: 1rem;">{{ type|capitalize }} (error state)<textarea class="error"></textarea></label>
+{% endset %}
+{{ examples }}
+<br>
+{% include '@psu-ooe/callout/callout.twig' with {
+  background: 'blue-gradient',
+  content: examples,
+} only %}

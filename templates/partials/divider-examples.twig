@@ -1,0 +1,18 @@
+{% set variants = {
+  'tall-blue-gradient-geometric': 'Tall blue gradient geometric',
+  'tall-medium-grey-geometric': 'Tall medium grey geometric',
+  'tall-blue-gradient-shield': 'Tall blue gradient shield',
+  'tall-medium-grey-shield': 'Tall medium grey shield',
+  'standard-light-grey': 'Standard light grey',
+  'standard-white': 'Standard white',
+  'thin-slate-light': 'Thin slate light',
+} %}
+  {% include '@psu-ooe/heading/heading.twig' with { content: 'Examples' } only %}
+
+{% for variant, label in variants %}
+  {% include '@psu-ooe/heading/heading.twig' with { content: label, level: 3 } only %}
+  {% include '@psu-ooe/divider/divider.twig' with {
+    variant: variant,
+  } only %}
+  <br>
+{% endfor %}

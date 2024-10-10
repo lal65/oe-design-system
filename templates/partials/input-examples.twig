@@ -1,14 +1,5 @@
 {% include '@psu-ooe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
-<label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} /> {{ type|capitalize }}</label>
-<br>
-{% for variation in variations %}
-  <label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} {{ variation|join(' ') }} /> {{ type|capitalize }} ({{ variation|join(',') }})</label>
-  <br>
-{% endfor %}
-<label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} class="error" /> {{ type|capitalize }} (error state)</label>
-<br>
-
-{% set example_on_dark %}
+{% set examples %}
   <label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} /> {{ type|capitalize }}</label>
   <br>
   {% for variation in variations %}
@@ -16,9 +7,10 @@
     <br>
   {% endfor %}
   <label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} class="error" /> {{ type|capitalize }} (error state)</label>
-  <br>
 {% endset %}
+{{ examples }}
+<br>
 {% include '@psu-ooe/callout/callout.twig' with {
   background: 'blue-gradient',
-  content: example_on_dark,
+  content: examples,
 } only %}
