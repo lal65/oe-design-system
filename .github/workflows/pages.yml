@@ -30,6 +30,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Install prerequisite software
+        run: |
+          sudo apt update
+          sudo apt install unoconv
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/setup-node@v4
