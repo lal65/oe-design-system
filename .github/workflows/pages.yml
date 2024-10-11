@@ -33,7 +33,7 @@ jobs:
       - name: Install prerequisite software
         run: |
           sudo apt update
-          sudo apt install unoconv
+          sudo apt install imagemagick
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/setup-node@v4
