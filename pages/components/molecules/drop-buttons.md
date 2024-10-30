@@ -64,12 +64,41 @@ sort_order: 1
   },
   variables: variables,
   modifiers: modifiers,
+  examples: [
+    {
+      label: 'Default', 
+      content: '
+{% include "@psu-ooe/drop-button/drop-button.twig" with {
+  toggle_content: "Toggle drop panel",
+  panel_content: "Example content.",
+} only %}'
+    },
+    {
+      label: 'Wide', 
+      content: '
+{% include "@psu-ooe/drop-button/drop-button.twig" with {
+  toggle_content: "Toggle wide drop panel",
+  panel_content: "Example content.",
+  panel_width: "wide",
+} only %}'
+    },
+    {
+      label: 'Small panel padding', 
+      content: '
+{% include "@psu-ooe/drop-button/drop-button.twig" with {
+  toggle_content: "Toggle drop panel with small padding",
+  panel_content: "Example content.",
+  panel_padding: "small",
+} only %}'
+    },
+    {
+      label: 'No panel padding', 
+      content: '
+{% include "@psu-ooe/drop-button/drop-button.twig" with {
+  toggle_content: "Toggle drop panel with no padding",
+  panel_content: "Example content.",
+  panel_padding: "none",
+} only %}'
+    },
+  ]
 } only %}
-
-{% apply markdown_to_html %}
-  <br>
-  ## Examples
-  No examples are available at this time.
-
-  @TODO: Add examples.
-{% endapply %}

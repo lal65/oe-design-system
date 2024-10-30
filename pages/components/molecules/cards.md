@@ -59,7 +59,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/callout/card.twig" with {
+{% include "@psu-ooe/card/card.twig" with {
   link_url: <url>,
   link_text: <string>,
 } only %}',
