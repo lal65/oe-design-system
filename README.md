@@ -18,7 +18,7 @@ background_color: '#1e407c'
 ```
 
 #### base_path
-The `base_path` variable is used when your site is hosted without a CNAME record.  Your site will exist at `https://your-organization.github.io/{{ base_path }}`.  For example, `https://psu-ooe.github.io/static-site-template`.
+The `base_path` variable is used when your site is hosted without a CNAME record.  Your site will exist at `https://your-organization.github.io/{{ base_path }}`.  For example, `https://psu-online-education.github.io/static-site-template`.
 
 If using a CNAME for your site, this variable can be safely deleted.
 

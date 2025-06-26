@@ -53,7 +53,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "accordion-default",
   label: "Accordion label",
   expandable_content: "This is the accordion content."
@@ -65,7 +65,7 @@ sort_order: 1
     {
       label: 'Simple usage', 
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "simple-usage",
   label: "Default",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -74,7 +74,7 @@ sort_order: 1
     {
       label: 'Borderless',
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "borderless",
   label: "Borderless",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -84,7 +84,7 @@ sort_order: 1
     {
       label: 'Heading semantics', 
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "heading-semantics",
   label: "Heading semantics",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -94,7 +94,7 @@ sort_order: 1
     {
       label: 'Content indented', 
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "content-indented",
   label: "Content indented",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -104,7 +104,7 @@ sort_order: 1
     {
       label: 'Underline label', 
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "underline-label",
   label: "Underline label",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -114,17 +114,17 @@ sort_order: 1
     {
       label: 'Adjacency', 
       content: '
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "adjacent-1",
   label: "Adjacent 1",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 } only %}
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "adjacent-2",
   label: "Adjacent 2",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 } only %}
-{% include "@psu-ooe/accordion/accordion.twig" with {
+{% include "@oe/accordion/accordion.twig" with {
   id: "adjacent-3",
   label: "Adjacent 3",
   expandable_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

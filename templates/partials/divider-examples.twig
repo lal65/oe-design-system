@@ -7,11 +7,11 @@
   'standard-white': 'Standard white',
   'thin-slate-light': 'Thin slate light',
 } %}
-  {% include '@psu-ooe/heading/heading.twig' with { content: 'Examples' } only %}
+  {% include '@oe/heading/heading.twig' with { content: 'Examples' } only %}
 
 {% for variant, label in variants %}
-  {% include '@psu-ooe/heading/heading.twig' with { content: label, level: 3 } only %}
-  {% include '@psu-ooe/divider/divider.twig' with {
+  {% include '@oe/heading/heading.twig' with { content: label, level: 3 } only %}
+  {% include '@oe/divider/divider.twig' with {
     variant: variant,
   } only %}
   <br>

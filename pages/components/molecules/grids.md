@@ -32,7 +32,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/grid/grid.twig" with {
+{% include "@oe/grid/grid.twig" with {
   items: <array>,
   columns: <integer>,
 } only %}',
@@ -42,7 +42,7 @@ sort_order: 1
     {
       label: 'One column', 
       content: '
-{% include "@psu-ooe/grid/grid.twig" with {
+{% include "@oe/grid/grid.twig" with {
   items: ["item 1", "item 2", "item 3", "item 4"],
   columns: 1,
 } only %}'
@@ -50,7 +50,7 @@ sort_order: 1
     {
       label: 'Two column', 
       content: '
-{% include "@psu-ooe/grid/grid.twig" with {
+{% include "@oe/grid/grid.twig" with {
   items: ["item 1", "item 2", "item 3", "item 4"],
   columns: 2,
 } only %}'
@@ -58,7 +58,7 @@ sort_order: 1
     {
       label: 'Three column', 
       content: '
-{% include "@psu-ooe/grid/grid.twig" with {
+{% include "@oe/grid/grid.twig" with {
   items: ["item 1", "item 2", "item 3", "item 4"],
   columns: 3,
 } only %}'
@@ -66,7 +66,7 @@ sort_order: 1
     {
       label: 'Four column', 
       content: '
-{% include "@psu-ooe/grid/grid.twig" with {
+{% include "@oe/grid/grid.twig" with {
   items: ["item 1", "item 2", "item 3", "item 4"],
   columns: 4,
 } only %}'

@@ -37,7 +37,7 @@ sort_order: 0
 {% set example_on_dark %}
   <label>Example label</label>
 {% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: example_on_dark,
 } only %}

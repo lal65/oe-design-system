@@ -49,7 +49,7 @@ sort_order: 0
   <button>Submit</button>
 </form>
 {% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: example_on_dark,
 } only %}

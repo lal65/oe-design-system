@@ -33,7 +33,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   emphasis: <string>,
   preliminary: <string>,
   primary: <string>,
@@ -44,7 +44,7 @@ sort_order: 1
     {
       label: 'Default', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   emphasis: "16",
   preliminary: "Liberal arts and communications",
   primary: "Degrees and Certificates",
@@ -53,7 +53,7 @@ sort_order: 1
     {
       label: 'No emphasis', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   preliminary: "Liberal arts and communications",
   primary: "Degrees and Certificates",
 } only %}'
@@ -61,7 +61,7 @@ sort_order: 1
     {
       label: 'No preliminary', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   emphasis: "16",
   primary: "Degrees and Certificates",
 } only %}'
@@ -69,7 +69,7 @@ sort_order: 1
     {
       label: 'No primary', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   emphasis: "16",
   preliminary: "Liberal arts and communications",
 } only %}'
@@ -77,21 +77,21 @@ sort_order: 1
     {
       label: 'Only emphasis', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   emphasis: "16",
 } only %}'
     },
     {
       label: 'Only preliminary', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   preliminary: "Liberal arts and communications",
 } only %}'
     },
     {
       label: 'Only primary', 
       content: '
-{% include "@psu-ooe/infographic/infographic.twig" with {
+{% include "@oe/infographic/infographic.twig" with {
   primary: "Degrees and Certificates",
 } only %}'
     },

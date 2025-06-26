@@ -16,7 +16,7 @@ sort_order: 1
 {% include 'partials/component-docs.twig' with {
   installation: {
     npm: {
-      package: '@psu-ooe/base',
+      package: '@oe/base',
     },
   },
   usage: {
@@ -46,7 +46,7 @@ sort_order: 1
     <figcaption>—Ayn Rand</figcaption>
   </figure>
 {% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: example_on_dark,
 } only %}

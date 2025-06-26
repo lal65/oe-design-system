@@ -10,6 +10,6 @@
         }
     ],
     "require-dev": {
-      "psu-ooe/static-site-generator": "dev-main"
+      "psu-online-education/static-site-generator": "dev-main"
     }
 }

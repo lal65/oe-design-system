@@ -1,11 +1,11 @@
 {% set tabs = [] %}
 {% if installation %}
   {% set installation_tab %}
-    {% include '@psu-ooe/heading/heading.twig' with { content: 'Installation', level: 2 } only %}
+    {% include '@oe/heading/heading.twig' with { content: 'Installation', level: 2 } only %}
     {% if installation.npm and installation.npm.package %}
-      {% include '@psu-ooe/heading/heading.twig' with { content: 'NPM', level: 3 } only %}
+      {% include '@oe/heading/heading.twig' with { content: 'NPM', level: 3 } only %}
       <code>
-        <pre class="ds-example">npm install @psu-ooe/{{ installation.npm.package }}</pre>
+        <pre class="ds-example">npm install @psu-online-education/{{ installation.npm.package }}</pre>
       </code>
     {% endif %}
   {% endset %}
@@ -14,15 +14,15 @@
 
 {% if usage %}
   {% set usage_tab %}
-    {% include '@psu-ooe/heading/heading.twig' with { content: 'Usage', level: 2 } only %}
+    {% include '@oe/heading/heading.twig' with { content: 'Usage', level: 2 } only %}
     {% if usage.html %}
-      {% include '@psu-ooe/heading/heading.twig' with { content: 'HTML', level: 3 } only %}
+      {% include '@oe/heading/heading.twig' with { content: 'HTML', level: 3 } only %}
       <code>
         <pre class="ds-example">{{ usage.html }}</pre>
       </code>
     {% endif %}
     {% if usage.twig %}
-      {% include '@psu-ooe/heading/heading.twig' with { content: 'Twig', level: 3 } only %}
+      {% include '@oe/heading/heading.twig' with { content: 'Twig', level: 3 } only %}
       <code>
         <pre class="ds-example">{{ usage.twig }}</pre>
       </code>
@@ -33,7 +33,7 @@
 
 {% if variables %}
   {% set variables_tab %}
-    {% include '@psu-ooe/heading/heading.twig' with { content: 'Variables', level: 2 } only %}
+    {% include '@oe/heading/heading.twig' with { content: 'Variables', level: 2 } only %}
     {{ variables }}
   {% endset %}
   {% set tabs = tabs|merge([{ id: 'variables'|clean_unique_id, title: 'Variables', content: variables_tab }]) %}
@@ -41,18 +41,18 @@
 
 {% if modifiers %}
   {% set modifiers_tab %}
-    {% include '@psu-ooe/heading/heading.twig' with { content: 'Modifiers', level: 2 } only %}
+    {% include '@oe/heading/heading.twig' with { content: 'Modifiers', level: 2 } only %}
     {{ modifiers }}
   {% endset %}
   {% set tabs = tabs|merge([{ id: 'modifiers'|clean_unique_id, title: 'Modifiers', content: modifiers_tab }]) %}
 {% endif %}
-{% include '@psu-ooe/tabs/tabs.twig' with {
+{% include '@oe/tabs/tabs.twig' with {
   tabs: tabs,
 } only %}
 
 {% if examples %}
   <br><br>
-  {% include '@psu-ooe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
+  {% include '@oe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
   {% for example in examples %}
     {% set example_content %}
       {{ include(template_from_string(example.content)) }}
@@ -61,7 +61,7 @@
       {% if example.unwrapped %}
         {{ example_content }}
       {% else %}
-        {% include '@psu-ooe/callout/callout.twig' with {
+        {% include '@oe/callout/callout.twig' with {
           content: example_content,
           shadow: 'standard',
         } only %}
@@ -71,7 +71,7 @@
       {% if example.unwrapped %}
         {{ example_content }}
       {% else %}
-        {% include '@psu-ooe/callout/callout.twig' with {
+        {% include '@oe/callout/callout.twig' with {
           content: example_content,
           background: 'blue-gradient',
         } only %}
@@ -91,7 +91,7 @@
         </pre>
       </code>
     {% endset %}
-    {% include '@psu-ooe/tabs/tabs.twig' with {
+    {% include '@oe/tabs/tabs.twig' with {
       expand_to_fit: true,
       tabs: [
         { id: 'example'|clean_unique_id, title: example.label, content: example_on_light },

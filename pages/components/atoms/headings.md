@@ -29,7 +29,7 @@ sort_order: 0
     Install just like any other NPM package.
     ### NPM
     ```bash
-    npm install @psu-ooe/heading
+    npm install @psu-online-education/heading
     ```
   {% endapply %}
 {% endset %}
@@ -40,7 +40,7 @@ sort_order: 0
     Twig example:
   {% endapply %}
   <code><pre class="ds-example">{% verbatim %}
-{% include '@psu-ooe/heading/heading.twig' with {
+{% include '@oe/heading/heading.twig' with {
   content: 'The heading content',
 } only %}{% endverbatim %}</pre></code>
 {% endset %}
@@ -102,12 +102,12 @@ sort_order: 0
   {% endapply %}
   <code>
     <pre class="ds-example">
-      {{- source('@psu-ooe/heading/heading.twig') -}}
+      {{- source('@oe/heading/heading.twig') -}}
     </pre>
   </code>
 {% endset %}
 
-{% include '@psu-ooe/tabs/tabs.twig' with {
+{% include '@oe/tabs/tabs.twig' with {
   tabs: [
     { id: 'heading-installation'|clean_unique_id, title: 'Installation', content: installation },
     { id: 'heading-usage'|clean_unique_id, title: 'Usage', content: usage },
@@ -122,34 +122,34 @@ sort_order: 0
   ## Examples
   ### Defaults
 {% endapply %}
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 1,
   content: "Heading 1: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 2,
   content: "Heading 2: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 3,
   content: "Heading 3: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 4,
   content: "Heading 4: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
 
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 5,
   content: "Heading 5: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
 <br>
 
-{{ example('{% include "@psu-ooe/heading/heading.twig" with {
+{{ example('{% include "@oe/heading/heading.twig" with {
   level: 6,
   content: "Heading 6: The quick brown fox jumps over the lazy dog",
 } only %}', ['light', 'dark'])|raw }}
@@ -161,7 +161,7 @@ sort_order: 0
 {{ example('
 {% for level in range(1, 6) %}
   <div style="display: flex; flex-flow: row nowrap; gap: var(--text-element-vertical-space--default); margin-bottom: var(--text-element-vertical-space--default);">
-    {% include "@psu-ooe/heading/heading.twig" with {
+    {% include "@oe/heading/heading.twig" with {
       content: "Should be flush with this box -->|",
       level: level,
       flush: true,
@@ -177,7 +177,7 @@ sort_order: 0
 {% endapply %}
 {% for vspace in ["small", "medium", "large", "none"] %}
   {{ example('
-    {% include "@psu-ooe/heading/heading.twig" with {
+    {% include "@oe/heading/heading.twig" with {
       content: "This heading has " ~ (vspace == "none" ? "no space" : ("a ' ~ vspace ~ ' amount of space")) ~ " under it",
       vspace: "' ~ vspace ~ '",
     } only %}

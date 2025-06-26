@@ -1,4 +1,4 @@
-{% include '@psu-ooe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
+{% include '@oe/heading/heading.twig' with { content: 'Examples', level: 2 } only %}
 {% set examples %}
   <label style="display: flex; align-items: center; gap: 1rem;"><input {% if type %}type="{{ type }}"{% endif %} /> {{ type|capitalize }}</label>
   <br>
@@ -10,7 +10,7 @@
 {% endset %}
 {{ examples }}
 <br>
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: examples,
 } only %}

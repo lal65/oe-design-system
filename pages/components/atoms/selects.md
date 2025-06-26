@@ -81,7 +81,7 @@ sort_order: 0
 {{ examples }}
 <br>
 <br>
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: examples,
 } only %}

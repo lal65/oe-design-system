@@ -32,7 +32,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/cta/cta-group.twig" with {
+{% include "@oe/cta/cta-group.twig" with {
   ctas: <array>,
   align_right: <boolean>,
   expand_to_fit: <boolean>,

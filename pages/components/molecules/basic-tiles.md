@@ -40,7 +40,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/basic-tile/basic-tile.twig" with {
+{% include "@oe/basic-tile/basic-tile.twig" with {
   url: <url>,
   primary_label: <string>,
   secondary_label: <string>,
@@ -52,7 +52,7 @@ sort_order: 1
     {
       label: 'Default', 
       content: '
-{% include "@psu-ooe/basic-tile/basic-tile.twig" with {
+{% include "@oe/basic-tile/basic-tile.twig" with {
   url: "#",
   primary_label: "Primary label",
   secondary_label: "Secondary label",
@@ -61,7 +61,7 @@ sort_order: 1
     {
       label: 'Tracking Enabled', 
       content: '
-{% include "@psu-ooe/basic-tile/basic-tile.twig" with {
+{% include "@oe/basic-tile/basic-tile.twig" with {
   url: "#",
   primary_label: "Learn about the World Campus Student Government Association",
   secondary_label: "Clicks are tracked via datalayer",

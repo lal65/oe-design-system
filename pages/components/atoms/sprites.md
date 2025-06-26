@@ -20,7 +20,7 @@ sort_order: 0
     },
   },
   usage: {
-    twig: '{% include \'@psu-ooe/sprite/sprite.twig\' with {
+    twig: '{% include \'@oe/sprite/sprite.twig\' with {
   name: <code>
 } only %}'
   }

@@ -10,7 +10,7 @@ menu_link_title: 'Colors'
 sort_order: 1
 ---
 {% apply markdown_to_html %}
-  The color foundation of Penn State Outreach and Online Education, based on Penn State branding guidelines.
+  The color foundation of Penn State Online Education, based on Penn State branding guidelines.
 {% endapply %}
 
 {% set colors = {
@@ -51,6 +51,6 @@ sort_order: 1
   {% set items = items|merge([color]) %}
 {% endfor %}
 
-{% include '@psu-ooe/grid/grid.twig' with {
+{% include '@oe/grid/grid.twig' with {
   items: items
 } only %}

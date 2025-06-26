@@ -32,7 +32,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: <string>,
   text: <string>,
 } only %}',
@@ -42,7 +42,7 @@ sort_order: 1
     {
       label: 'Academics', 
       content: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: "fas-building-columns",
   icon_alt: "Academic role",
   text: "Fellow (FACHE), American College of Healthcare Executives",
@@ -51,7 +51,7 @@ sort_order: 1
     {
       label: 'Business Roles', 
       content: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: "fas-briefcase",
   icon_alt: "Business role",
   text: "C.E.O., BigCorp Inc.",
@@ -60,7 +60,7 @@ sort_order: 1
     {
       label: 'Certificate', 
       content: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: "fas-certificate",
   icon_alt: "Credential",
   text: "Special Education Credential, Chapman University",
@@ -69,7 +69,7 @@ sort_order: 1
     {
       label: 'Degree', 
       content: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: "fas-graduation-cap",
   icon_alt: "Degree",
   text: "Ph.D., Accounting, University of Maryland",
@@ -78,7 +78,7 @@ sort_order: 1
     {
       label: 'Medical role', 
       content: '
-{% include "@psu-ooe/credential/credential.twig" with {
+{% include "@oe/credential/credential.twig" with {
   icon: "fas-briefcase-medical",
   icon_alt: "Medical role",
   text: "Emergency Medical Residency, WellSpan York Hospital",

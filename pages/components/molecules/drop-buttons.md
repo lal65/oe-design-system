@@ -55,7 +55,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/drop-button/drop-button.twig" with {
+{% include "@oe/drop-button/drop-button.twig" with {
   toggle_content: <string>,
   panel_content: <string>,
   panel_width: <enum>,
@@ -68,7 +68,7 @@ sort_order: 1
     {
       label: 'Default', 
       content: '
-{% include "@psu-ooe/drop-button/drop-button.twig" with {
+{% include "@oe/drop-button/drop-button.twig" with {
   toggle_content: "Toggle drop panel",
   panel_content: "Example content.",
 } only %}'
@@ -76,7 +76,7 @@ sort_order: 1
     {
       label: 'Wide', 
       content: '
-{% include "@psu-ooe/drop-button/drop-button.twig" with {
+{% include "@oe/drop-button/drop-button.twig" with {
   toggle_content: "Toggle wide drop panel",
   panel_content: "Example content.",
   panel_width: "wide",
@@ -85,7 +85,7 @@ sort_order: 1
     {
       label: 'Small panel padding', 
       content: '
-{% include "@psu-ooe/drop-button/drop-button.twig" with {
+{% include "@oe/drop-button/drop-button.twig" with {
   toggle_content: "Toggle drop panel with small padding",
   panel_content: "Example content.",
   panel_padding: "small",
@@ -94,7 +94,7 @@ sort_order: 1
     {
       label: 'No panel padding', 
       content: '
-{% include "@psu-ooe/drop-button/drop-button.twig" with {
+{% include "@oe/drop-button/drop-button.twig" with {
   toggle_content: "Toggle drop panel with no padding",
   panel_content: "Example content.",
   panel_padding: "none",

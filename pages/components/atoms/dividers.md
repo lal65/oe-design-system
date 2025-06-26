@@ -20,7 +20,7 @@ sort_order: 0
     },
   },
   usage: {
-    twig: '{% include "@psu-ooe/divider/divider.twig" with {
+    twig: '{% include "@oe/divider/divider.twig" with {
   variant: <variant>,
 } only %}'
   }

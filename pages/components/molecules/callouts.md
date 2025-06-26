@@ -78,7 +78,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is the callout content."
 } only %}',
   },
@@ -89,7 +89,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Default', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a transparent background.",
 } only %}'
     },
@@ -97,7 +97,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Blue', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a blue background.",
   background: "blue",
 } only %}'
@@ -106,7 +106,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Blue gradient', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a blue gradient background.",
   background: "blue-gradient",
 } only %}'
@@ -115,7 +115,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Light grey', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a light grey background.",
   background: "light-grey",
 } only %}'
@@ -124,7 +124,7 @@ sort_order: 1
       unwrapped: true,
       label: 'White', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a white background.",
   background: "white",
 } only %}'
@@ -133,7 +133,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Large percentage padding', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with large percentage based padding.",
   background: "light-grey",
   padding_horizontal: "large-percentage",
@@ -144,7 +144,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Medium percentage padding', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with medium percentage based padding.",
   background: "light-grey",
   padding_horizontal: "medium-percentage",
@@ -155,7 +155,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Small percentage padding', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with medium percentage based padding.",
   background: "light-grey",
   padding_horizontal: "small-percentage",
@@ -166,7 +166,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Small vertical padding', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with small vertical padding.",
   background: "light-grey",
   padding_vertical: "small",
@@ -176,7 +176,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Extra small vertical padding', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with extra small vertical padding.",
   background: "light-grey",
   padding_vertical: "xsmall",
@@ -186,7 +186,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Standard Shadow', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a standard shadow.",
   shadow: "standard",
 } only %}'
@@ -195,7 +195,7 @@ sort_order: 1
       unwrapped: true,
       label: 'Narrow width', 
       content: '
-{% include "@psu-ooe/callout/callout.twig" with {
+{% include "@oe/callout/callout.twig" with {
   content: "This is a callout with a narrow width.",
   width: "narrow",
 } only %}'

@@ -46,7 +46,7 @@ sort_order: 0
   <p>There's nothing inside yet. @TODO: Fill it up.</p>
 </fieldset>
 {% endset %}
-{% include '@psu-ooe/callout/callout.twig' with {
+{% include '@oe/callout/callout.twig' with {
   background: 'blue-gradient',
   content: example_on_dark,
 } only %}

@@ -75,7 +75,7 @@ sort_order: 1
         unwrapped: true,
         label: background ~ ' (' ~ color ~ ',' ~ width_label ~ ')',
         content: '
-{% include "@psu-ooe/background-container/background-container.twig" with {
+{% include "@oe/background-container/background-container.twig" with {
   color: "' ~ color ~ '",
   width: "' ~ width ~ '",
   background_image: "' ~ background ~ '",
@@ -144,7 +144,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/background-container/background-container.twig" with {
+{% include "@oe/background-container/background-container.twig" with {
   color: <color>,
   background_image: <image>,
   content: <content>

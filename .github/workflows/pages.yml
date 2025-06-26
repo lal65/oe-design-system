@@ -47,8 +47,8 @@ jobs:
         uses: "ramsey/composer-install@v2"
       - name: Authenticate with NPM registry
         run: |
-          echo "@psu-ooe:registry=https://npm.pkg.github.com" >> vendor/psu-ooe/static-site-generator/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> vendor/psu-ooe/static-site-generator/.npmrc
+          echo "@psu-online-education:registry=https://npm.pkg.github.com" >> vendor/psu-online-education/static-site-generator/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> vendor/psu-online-education/static-site-generator/.npmrc
       - name: Compile assets
         run: vendor/bin/compile
       - name: Setup Pages

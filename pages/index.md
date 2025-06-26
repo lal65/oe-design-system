@@ -28,7 +28,7 @@ sort_order: 0
     this platform are inclusive and can be easily accessed by all users,
     regardless of their abilities.
   {% endapply %}
-  {% include '@psu-ooe/read-more/read-more.twig' with {
+  {% include '@oe/read-more/read-more.twig' with {
     url: '/' ~ (base_path ? base_path ~ '/') ~ 'accessibility',
     title: 'Discover how we make Penn State more accessible'
   } only %}
@@ -41,7 +41,7 @@ sort_order: 0
     emphasis on security. By following best practices, websites created with
     this platform are protected against potential threats and data breaches.
   {% endapply %}
-  {% include '@psu-ooe/read-more/read-more.twig' with {
+  {% include '@oe/read-more/read-more.twig' with {
     url: '/' ~ (base_path ? base_path ~ '/') ~ 'security',
     title: 'Explore our security mechanisms'
   } only %}
@@ -55,7 +55,7 @@ sort_order: 0
     low-carbon digital experiences. Tested against Web Vital metrics, site
     owners reap the SEO benefits.
   {% endapply %}
-  {% include '@psu-ooe/read-more/read-more.twig' with {
+  {% include '@oe/read-more/read-more.twig' with {
     url: '/' ~ (base_path ? base_path ~ '/') ~ 'performance',
     title: 'Recognize what ethical web design looks like'
   } only %}
@@ -68,13 +68,13 @@ sort_order: 0
     professional design across all digital experiences that aligns with the
     Penn State brand identity.
   {% endapply %}
-  {% include '@psu-ooe/read-more/read-more.twig' with {
+  {% include '@oe/read-more/read-more.twig' with {
     url: '/' ~ (base_path ? base_path ~ '/') ~ 'brand',
     title: 'Learn how we align with the Penn State brand'
   } only %}
 {% endset %}
 <br>
-{% include '@psu-ooe/icon-list/icon-list.twig' with {
+{% include '@oe/icon-list/icon-list.twig' with {
   columns: 2,
   items: [
     { content: accessibility, icon: 'fas-child-reaching' },

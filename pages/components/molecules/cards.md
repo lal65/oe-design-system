@@ -59,7 +59,7 @@ sort_order: 1
   },
   usage: {
     twig: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_url: <url>,
   link_text: <string>,
 } only %}',
@@ -70,7 +70,7 @@ sort_order: 1
     {
       label: 'Minimal', 
       content: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_text: "This is the card text.",
   link_url: "#",
   link_attribution: "This is the card attribution."
@@ -79,7 +79,7 @@ sort_order: 1
     {
       label: 'Image', 
       content: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_text: "This is the card text.",
   link_url: "#",
   link_attribution: "This is the card attribution.",
@@ -90,7 +90,7 @@ sort_order: 1
     {
       label: 'Video', 
       content: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_text: "This is the card text.",
   link_url: "#",
   link_attribution: "Watch this video on YouTube.",
@@ -102,7 +102,7 @@ sort_order: 1
     {
       label: 'Description', 
       content: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_text: "This is the card text.",
   link_url: "#",
   link_attribution: "This is the card attribution.",
@@ -114,7 +114,7 @@ sort_order: 1
     {
       label: 'List mode', 
       content: '
-{% include "@psu-ooe/card/card.twig" with {
+{% include "@oe/card/card.twig" with {
   link_text: "This is the card text.",
   link_url: "#",
   link_attribution: "This is the card attribution.",

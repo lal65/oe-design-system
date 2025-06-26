@@ -9,7 +9,7 @@
 
 {% for item in menu_items %}
   {% set grid_item %}
-    {% include '@psu-ooe/navigation-tile/navigation-tile.twig' with {
+    {% include '@oe/navigation-tile/navigation-tile.twig' with {
       link: { url: item['url'], label: item['title'] },
       description: item['description'],
     } only %}
@@ -17,8 +17,8 @@
   {% set grid_items = grid_items|merge([grid_item]) %}
 {% endfor %}
 {% if heading %}
-  {% include '@psu-ooe/heading/heading.twig' with heading only %}
+  {% include '@oe/heading/heading.twig' with heading only %}
 {% endif %}
-{% include '@psu-ooe/grid/grid.twig' with {
+{% include '@oe/grid/grid.twig' with {
   items: grid_items
 } only %}

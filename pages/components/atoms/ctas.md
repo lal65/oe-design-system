@@ -20,7 +20,7 @@ sort_order: 0
     },
   },
   usage: {
-    twig: '{% include "@psu-ooe/cta/cta-block.twig" with {
+    twig: '{% include "@oe/cta/cta-block.twig" with {
   label: "Call to action",
   url: "#",
 } only %}'

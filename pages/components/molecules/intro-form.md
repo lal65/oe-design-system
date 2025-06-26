@@ -1,25 +1,29 @@
 ---
-title: 'Components - Molecules - Bands'
+title: 'Components - Molecules - Intro Forms'
 meta:
   robots: 'noindex, nofollow'
-  description: 'Bands are simple containers that are meant to be stacked inside sticky panels.'
+  description: 'Intro Forms are opinionated containers feature decorative images, a heading, text, and form elements.'
 page_subtitle_before: 'Molecules'
-page_title: 'Bands'
+page_title: 'Intro Forms'
 page_subtitle_after: 'Penn State World Campus'
-menu_link_title: 'Bands'
+menu_link_title: 'Intro Forms'
 sort_order: 1
 ---
 {% apply markdown_to_html %}
-  Bands are simple containers that are meant to be stacked inside sticky
-  panels.
+  Intro Forms are opinionated containers feature a decorative image, heading,
+  text, and form elements. They are expected to be used in full-width contexts
+  and are design-optimized for forms that consist of 3 to 5 visible fields at
+  any given point in time. Multiple images may be provided in order to serve a
+  randomized image every page view.
 {% endapply %}
 
 {% set variables %}
   {% apply markdown_to_html %}
     | Variable   | Type   | Required | Description                                                                                                                         |
     |------------|--------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-    | content    | string | true     | The content to render inside the container.                                                                                         |
-    | background | string | false    | May match a documented background modifier (below). If not overridden, a default background color is applied.                       |
+    | form    | html | true     | The form to render.                                                                                         |
+    | title | string | false    | May match a documented background modifier (below). If not overridden, a default background color is applied.                       |
+    | heading_level | string | 
     | padding    | string | false    | May match a documented padding modifier (below). If not overridden, a default amount of vertical padding is added to the container. |
   {% endapply %}
 {% endset %}

@@ -46,7 +46,7 @@ sort_order: 3
   {% endfor %}
 {% endset %}
 
-{% include '@psu-ooe/expandable-section/expandable-section.twig' with {
+{% include '@oe/expandable-section/expandable-section.twig' with {
   intro: text_weight_modifiers_intro,
   expand_label: 'Show weight modifiers',
   collapse_label: 'Close section',
@@ -69,7 +69,7 @@ sort_order: 3
       ### {{ density|capitalize }}
     {% endapply %}
     {% if density == 'nospace' %}
-      {% include '@psu-ooe/alert/alert.twig' with {
+      {% include '@oe/alert/alert.twig' with {
       severity: 'warning',
       content: 'Use caution in where the nospace modifier is used. Some users may have difficulty reading the content!',
       } only %}
@@ -80,7 +80,7 @@ sort_order: 3
   {% endfor %}
 {% endset %}
 
-{% include '@psu-ooe/expandable-section/expandable-section.twig' with {
+{% include '@oe/expandable-section/expandable-section.twig' with {
   intro: text_density_modifiers_intro,
   expand_label: 'Show density modifiers',
   collapse_label: 'Close section',
@@ -105,7 +105,7 @@ sort_order: 3
   {% endfor %}
 {% endset %}
 
-{% include '@psu-ooe/expandable-section/expandable-section.twig' with {
+{% include '@oe/expandable-section/expandable-section.twig' with {
   intro: text_size_modifiers_intro,
   expand_label: 'Show size modifiers',
   collapse_label: 'Close section',
@@ -146,7 +146,7 @@ sort_order: 3
   {{ example('<span class="text text--contrasting">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>', ['light', 'dark'])|raw }}
 {% endset %}
 
-{% include '@psu-ooe/expandable-section/expandable-section.twig' with {
+{% include '@oe/expandable-section/expandable-section.twig' with {
   intro: advanced_modifiers_intro,
   expand_label: 'Show advanced modifiers',
   collapse_label: 'Close section',
