@@ -52,11 +52,21 @@ sort_order: 1
   **_without javascript enabled_**, making it a very Marketer-friendly platform
   for running A/B testing, etc.
 
+  ## Real Manual Testing
+  Automated accessibility are great, but they will never be able to catch
+  everything. Our components are tested with various browsers and assistive
+  technologies.
+  - Windows/NVDA
+  - MacOS/Voiceover
+  - Linux/Orca
+  - Android/Talkback
+  - iOS/Talkback
+
   ## Setting The Bar High
   In conclusion, the Penn State World Campus design system demonstrates a
   strong commitment to accessibility by incorporating WCAG2.1 AA standards
   into its design and development process. By focusing on clear navigation,
-  color contrast, and alternative text for images, the system provides an
+  color contrast, and has an emphasis on real testing, the system provides an
   inclusive online experience for all users, regardless of their abilities.
   Through its dedication to accessibility, the World Campus design system
   sets a high standard for other offerings to follow in creating a more
