@@ -1,4 +1,4 @@
-base_path: 'ooe-design-system'
+base_path: 'oe-design-system'
 site_name: 'Penn State World Campus Design System'
 site_description: 'The documentation and user handbook for the Penn State World Campus Design System.'
 theme_color: '#1e407c'
