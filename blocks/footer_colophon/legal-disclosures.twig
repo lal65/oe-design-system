@@ -8,12 +8,11 @@ sort_order: 0
     {% include '@oe/sprite/sprite.twig' with { name: 'psu-mark', expand: true } only %}
   </a>
   <div style="font-size: var(--font-size--3xsmall);line-height: var(--line-height--snug)">
-    {% set accessibility %}<a style="display:inline-block;padding:.5rem 0;" href="#">Accessibility</a>{% endset %}
-    {% set equal_opportunity %}<a style="display:inline-block;padding:.5rem 0;" href="#">Equal Opportunity</a>{% endset %}
-    {% set nondiscrimination %}<a style="display:inline-block;padding:.5rem 0;" href="#">Nondiscrimination</a>{% endset %}
-    {% set privacy %}<a style="display:inline-block;padding:.5rem 0;" href="#">Privacy</a>{% endset %}
-    {% set consumer_info %}<a style="display:inline-block;padding:.5rem 0;" href="#">Consumer Information and Disclosures</a>{% endset %}
-    {% set copyright %}<a style="display:inline-block;padding:.5rem 0;" href="#">The Pennsylvania State University © 2024</a>{% endset %}
+    {% set accessibility %}<a style="display:inline-block;padding:.5rem 0;" href="https://www.worldcampus.psu.edu/accessibility">Accessibility</a>{% endset %}
+    {% set nondiscrimination %}<a style="display:inline-block;padding:.5rem 0;" href="https://policy.psu.edu/policies/ad85">Nondiscrimination</a>{% endset %}
+    {% set privacy %}<a style="display:inline-block;padding:.5rem 0;" href="https://www.worldcampus.psu.edu/privacy-policy">Privacy</a>{% endset %}
+    {% set consumer_info %}<a style="display:inline-block;padding:.5rem 0;" href="https://www.worldcampus.psu.edu/consumer-information-and-disclosures">Consumer Information and Disclosures</a>{% endset %}
+    {% set copyright %}<a style="display:inline-block;padding:.5rem 0;" href="https://www.psu.edu/copyright-information">The Pennsylvania State University ©{{ 'now'|date('Y') }}</a>{% endset %}
     {% set x %}{% endset %}
     {% include '@oe/list/list.twig' with {
       orientation: 'horizontal',
